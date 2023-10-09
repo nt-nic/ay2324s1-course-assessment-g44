@@ -39,7 +39,7 @@
       "title": "fuck this shit seriously",
       "description": "what the fuck",
       "category": "gay ass ",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "id": 11
     },
     {
@@ -69,6 +69,13 @@
       "category": "seth fuckin gilbert baby",
       "difficulty": "easy",
       "id": 16
+    },
+    {
+      "title": "gay",
+      "description": "gay",
+      "category": "",
+      "difficulty": "medium",
+      "id": 17
     }
   ]
 }

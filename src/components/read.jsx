@@ -15,22 +15,8 @@ const Read = (props) => {
 
   
   //handle fetching of data from local json server
-  useEffect(() => {
-    fetch('http://localhost:8000/questions')
-    .then(res => {
-      return res.json();
-    })
-    .then(data => {
-      console.log(data);
-      setQuestions(data);
-    });
-  }, [])
-
-
-  //attempts to connect to mongo db
-
   // useEffect(() => {
-  //   fetch('/getQuestions')
+  //   fetch('http://localhost:8000/questions')
   //   .then(res => {
   //     return res.json();
   //   })
@@ -39,6 +25,20 @@ const Read = (props) => {
   //     setQuestions(data);
   //   });
   // }, [])
+
+
+  //attempts to connect to mongo db
+
+  useEffect(() => {
+    fetch('http://localhost:3001/routes/getQuestions')
+    .then(res => {
+      return res.json();
+    })
+    .then(data => {
+      console.log(data);
+      setQuestions(data);
+    });
+  }, [])
 
   // useEffect(() => {
   //   axios.get("/getQuestions")
